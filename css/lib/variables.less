@@ -13,6 +13,31 @@
 ///////////////
 // VARIABLES //
 ///////////////
+@width:960px;
+
+
+.grilla{
+	.clearfix();
+	width:@width;
+	background: url('../images/grid_60x20.png');
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-@width / 2;
+	z-index: 1;
+	//min-height: 100px;
+	height:100vh;
+}
+.viewport{
+	position:absolute;
+	bottom:0;
+	left:0;
+	background: black;
+	color:white;
+	font-size: 12px;
+	line-height: 1;
+	padding:3px;
+}
 
 /* ----------------------------------------------------- 
 	FLAT COLORS
