@@ -1,1 +1,25 @@
 screenshot.png
+
+# Exclude these files from the git repo
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+sitemap.*
+wp-config.php
+
+# Hidden system files
+*.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.htaccess
+*[Tt]humbs.db
+*.Trashes
+wp-config-sample.php
+wp-content/uploads/*
+local-config.php
