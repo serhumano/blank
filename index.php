@@ -22,6 +22,28 @@
 	<script>sless.watch();</script>
 </head>
 <body>
+<div class="grilla"></div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+     $(document).ready(function(e) {
+   showViewportSize();   
+});
+$(window).resize(function(e) {
+   showViewportSize();
+});
+function showViewportSize() {
+   var the_width = $(window).width();
+   var the_height = $(window).height();                 
+   $('#width').text(the_width);
+   $('#height').text(the_height);
+}
+</script>
+    <div class="viewport">
+    <strong>W: </strong><span id="width">Resize to find out!</span><br />
+    <strong>H: </strong><span id="height">Resize to find out!</span>        
+    </div> 
+
 holi <br>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos doloremque, vero maiores ab minus similique a optio! Ipsam quod fugiat ducimus ipsum incidunt, vel sit, nobis minus! Totam, modi, atque. <br>
 <a href="#">test de enlace</a><br>
