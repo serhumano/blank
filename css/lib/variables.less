@@ -1,0 +1,335 @@
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 16;
+@column-width: 45;
+@gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+//@total-width: 100%;
+
+///////////////
+// VARIABLES //
+///////////////
+
+/* ----------------------------------------------------- 
+	FLAT COLORS
+----------------------------------------------------- */
+@turquoise:#1ABC9C;
+@green-sea:#16A085;
+@emerland:#2ECC71;
+@nephritis:#27AE60;
+@peter-river:#3498DB;
+@belize-hole:#2980B9;
+@amethyst:#9B59B6;
+@wisteria:#8E44AD;
+@wet-asphalt:#34495E;
+@midnight-blue:#2C3E50;
+@sun-flower:#F1C40F;
+@orange:#F39C12;
+@carrot:#E67E22;
+@pumpkin:#D35400;
+@alizarin:#E74C3C;
+@pomegranate:#C0392B;
+@clouds:#ECF0F1;
+  //color: #bdc3c7;
+@silver:#BDC3C7;
+@concrete:#95A5A6;
+@asbestos:#7F8C8D;
+
+/* ----------------------------------------------------- 
+	OTRO FLAT
+----------------------------------------------------- */
+
+@turquoise2:  background: #1dd2af;
+@green-sea2:  background: #19b698;
+@emerland2:  background: #40d47e;
+@nephritis2:  background: #2cc36b;
+@peter-river2:  background: #4aa3df;
+@belize-hole2:  background: #2e8ece;
+@amethyst2:  background: #a66bbe;
+@wisteria2:  background: #9b50ba;
+@wet-asphalt2:  background: #3d566e;
+@midnight-blue2:  background: #354b60;
+@sun-flower2:  background: #f2ca27;
+@orange2:  background: #f4a62a;
+@carrot2:  background: #e98b39;
+@pumpkin2:  background: #ec5e00;
+@alizarin2:  background: #ea6153;
+@pomegranate2:  background: #d14233;
+@clouds2:  background: #fbfcfc;
+  //color: #bdc3c7;
+@silver2:  background: #cbd0d3;
+@concrete2:  background: #a3b1b2;
+@asbestos2:  background: #8c9899;
+
+
+
+// FLAT END
+
+@colortexto:#3a3a3a;
+@colorfondo:#f3f3f3;
+@colorlinea:#d7d7d7;
+@colorbgris:#eee; //gris claro de fondo
+
+@rojo:#c82a2f;
+@rojo:@pomegranate;
+
+@colorgui:@rojo;
+
+
+@fontsize: 16px;
+@factor : 3;
+h6{ font-size: @fontsize + @factor * 1; }
+h5{ font-size: @fontsize + @factor * 2; }
+h4{ font-size: @fontsize + @factor * 3; }
+h3{ font-size: @fontsize + @factor * 4; }
+h2{ font-size: @fontsize + @factor * 5; }
+h1{ font-size: @fontsize + @factor * 6; }
+
+/* ----------------------------------------------------- 
+	MIXINS
+----------------------------------------------------- */
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+	*zoom:1;
+	
+	&:before,
+	&:after {
+	    content:"";
+	    display:table;
+	}
+	&:after {
+	    clear:both;
+	}
+}
+
+.cover(){
+	//background: black url('../images/bg02.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	//background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.coverf(){
+	//background: black url('../images/bg02.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;	
+}
+
+.rounded(@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.shadow(){
+	text-shadow: 0px 0px 7px rgba(76, 67, 71, 1);
+}
+
+.boxshadow(){
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+.boxshadowh(){
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.translate(){
+	transform: translateY(-5px);
+}
+
+.imgborder(){
+	border: 6px solid rgb(158, 33, 37);
+    border: 6px solid rgba(158, 33, 37, .5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.vignette(@size:85px,@transp:.5){
+box-shadow:inset 0px 0px @size rgba(0,0,0,@transp);
+-webkit-box-shadow:inset 0px 0px @size rgba(0,0,0,@transp);
+-moz-box-shadow:inset 0px 0px @size rgba(0,0,0,@transp);
+}
+
+// Grays
+@white:             #fff;
+@grayLighter:       #ccc;
+@grayLight:         #777;
+@gray:              #555;
+@grayDark:          #333;
+@black:             #000;
+
+// Accent Colors
+@blue:              #08b5fb;
+@green:             #46a546;
+@red:               #9d261d;
+@yellow:            #ffc40d;
+@orange:            #f89406;
+@pink:              #c3325f;
+@purple:            #7a43b6;
+
+
+
+
+// buttons
+.button{
+	.rounded(6px);
+}
+.boton(){
+	//.rounded(@btrnd);
+	//background: @btnbg;
+	// color:white;
+	// padding:8px;
+	// border:0;
+	// font-size: 100%;
+	// cursor:pointer; cursor: hand;
+}
+
+.prueba{
+	a{
+		.boton();		
+	}
+}
+
+.crecer(){
+-webkit-transition:all 300ms linear; 
+-moz-transition:all 300ms linear; 
+-o-transition:all 300ms linear; 
+-ms-transition:all 300ms linear; 
+transition:all 300ms linear; 
+	&:hover{ 
+	-moz-transform: scale(1.2); 
+	-webkit-transform: scale(1.2); 
+	-o-transform: scale(1.2); 
+	transform: scale(1.2); 
+	}
+}
+
+.circular(){
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
+
+
+.optimizar(){
+	-webkit-font-smoothing: subpixel-antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.transicion(){
+		-webkit-transition: 0.25s linear;
+		transition: 0.25s linear;
+}
+/* ---------------------------------------------------------- 
+	GUI
+---------------------------------------------------------- */
+
+.info, .success, .warning, .error, .validation {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+  background-image: url('../images/info.png');
+}
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  background-image:url('../images/success.png');
+}
+.warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  background-image: url('../images/warning.png');
+}
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('../images/error.png');
+}
+
+.notice {
+  color: #6D6E6E;
+  background-color: #F1F1F1;
+  padding:15px;
+  border:1px solid #CBC4C4;
+}
+
+/*
+No borrar. Ejemplo de transición y enlace
+a {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: white;
+    padding: 2px 4px;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+}
+a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.new {
+    background-color: #e74c3c;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 2px 4px;
+    position: relative;
+    text-transform: uppercase;
+    top: -2px;
+    color:white;
+}
+*/
+
+
+/*
+.visible-phone();
+.visible-tablet
+.visible-desktop
+.hidden-phone
+.hidden-tablet
+.hidden-desktop
+*/
+
+// main column & sidebar
+/*
+#maincolumn {
+	.column(9);
+}
+#sidebar {
+	.column(3);
+}
+*/
+
+
+/*
+// main column
+#maincolumn {
+	.column(16);
+	
+	ul#boxes {
+		.row(16);
+
+		li {
+			.column(4,16);
+			margin-bottom: 1em;
+			background: silver;
+		}
+	}
+}
+*/
