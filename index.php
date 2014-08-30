@@ -19,7 +19,7 @@
 
     <!-- Scripts -->
 	<script src="js/less.js" type="text/javascript"></script>
-	<script>sless.watch();</script>
+	<script>less.watch();</script>
 </head>
 <body>
 <div class="grilla"></div>
