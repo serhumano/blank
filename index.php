@@ -45,43 +45,8 @@
 </div> 
 
 <header>
-	<div class="top">
-		<div class="logo">Logo</div>
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">La empresa</a></li>
-				<li><a href="#">Servicios</a></li>
-				<li><a href="#">Proyectos</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-	</div><!-- top -->
-	<div class="hslider">
-		hslider
-	</div><!-- hslider -->
-	<div class="hbarra">
-		hbarra
-	</div><!-- hbarra -->
+header
 </header>
-<div class="contenedor">
-	<section class="hproyectos">
-		hproyectos
-	</section><!-- hproyectos -->
-</div><!-- contenedor -->
-<div class="contenedor">
-	<section class="hquienes">
-		hquienes
-	</section><!-- hquienes -->
-	<section class="hnovedades">
-		hnovedades
-	</section>
-</div><!-- contenedor -->
-<div class="contenedor">
-	<section>
-		hcontacto
-	</section><!-- hcontacto -->
-</div><!-- contenedor -->
 <footer>
 	footer
 </footer>
