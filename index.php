@@ -47,6 +47,7 @@
 <header>
 header
 </header>
+<?php //include('./post.php'); ?>
 <footer>
 	footer
 </footer>
