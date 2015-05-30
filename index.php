@@ -9,7 +9,7 @@
 	<title>Document</title>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" media="screen" href="css/style.less" type="text/less" />
+	<link rel="stylesheet" media="screen" href="style.php" type="text/less" />
 	<!--[if lt IE 9]><script type="text/javascript" src="js/html5shiv"></script><![endif]-->
 		
 
