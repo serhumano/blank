@@ -9,7 +9,8 @@
 	<title>Document</title>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" media="screen" href="style.php" type="text/less" />
+	<?php /*<link rel="stylesheet/less" type="text/css" href="css/style.less" />*/?>
+	<link rel="stylesheet" type="text/css" href="style.php" />
 	<!--[if lt IE 9]><script type="text/javascript" src="js/html5shiv"></script><![endif]-->
 		
 
@@ -18,8 +19,10 @@
 	<script src="js/modernizr.js"></script>
 
     <!-- Scripts -->
+
 	<script src="js/less.js" type="text/javascript"></script>
 	<script>less.watch();</script>
+
 </head>
 <body>
 <div class="grilla"></div>

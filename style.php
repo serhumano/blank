@@ -15,7 +15,7 @@ $carpeta_salida="css/";
 $stylesheets=array("style");
 
 // poner un array de less y css
-$archivos_less =  array("./css/style.less");
+$archivos_less =  array("./less/style.less");
 
 ob_start("compress");
 foreach ($archivos_less as $archivo) {
