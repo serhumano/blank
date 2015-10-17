@@ -8,26 +8,25 @@
 	<meta name="Keywords" content="keyword, keywords">
 	<title>Document</title>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_directory');?>/js/jquery.1.11.1.js"></script>
 	<?php /*<link rel="stylesheet/less" type="text/css" href="css/style.less" />*/?>
-	<link rel="stylesheet" type="text/css" href="style.php" />
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/style.php" />
 	<!--[if lt IE 9]><script type="text/javascript" src="js/html5shiv"></script><![endif]-->
 		
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<script src="js/modernizr.js"></script>
+	<script src="<?php bloginfo('template_directory');?>/js/modernizr.js"></script>
 
     <!-- Scripts -->
 
-	<script src="js/less.js" type="text/javascript"></script>
+	<script src="<?php bloginfo('template_directory');?>/js/less.js" type="text/javascript"></script>
 	<script>less.watch();</script>
 
 </head>
 <body>
 <div class="grilla"></div>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<?/*<script src="http://code.jquery.com/jquery-latest.js"></script>*/ // se pasó abajo ?>
+<div class="viewport">
 <script>
 	$(document).ready(function(e) {
 		showViewportSize();   
@@ -42,7 +41,6 @@
 		$('#height').text(the_height);
 	}
 </script>
-<div class="viewport">
 	<strong>W: </strong><span id="width">Resize to find out!</span><br />
 	<strong>H: </strong><span id="height">Resize to find out!</span>        
 </div> 
@@ -50,9 +48,20 @@
 <header>
 header
 </header>
-<?php //include('./post.php'); ?>
+<div id="slider"></div>
 <footer>
 	footer
 </footer>
+<script src="<?php bloginfo('template_directory');?>/js/scripts.js"></script>
+<script type="text/javascript">
+//**************************************
+// JS caonditional load
+//**************************************
+if( isMobile()){
+ 	// some code..
+} else {
+ 	$( "#slider" ).load( "<?php bloginfo('template_directory') ?>/slider.php") 
+}
+</script>
 </body>
 </html>
