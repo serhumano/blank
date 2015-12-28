@@ -1,3 +1,20 @@
+///////////////////////////////
+// Llamando a isMobile
+///////////////////////////////
+
+//**************************************
+// JS caonditional load
+//**************************************
+if( isMobile()){
+    // some code..
+} else {
+    $( "#slider" ).load( "<?php bloginfo('template_directory') ?>/slider.php") 
+}
+
+///////////////////////////////
+// Función isMobile
+///////////////////////////////
+
 //document.getElementById('DivExample').innerHTML="Good Afternoon: <img src=number0.gif></img>";
 
 // Used to detect whether the users browser is an mobile browser
@@ -9,7 +26,7 @@ function isMobile() {
         return false;
     else if (localStorage.mobile) // mobile storage
         return true;
-
+ 
     // alternative
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     return true;

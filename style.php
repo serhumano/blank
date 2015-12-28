@@ -9,14 +9,12 @@ function compress($buffer) {
   $buffer = str_replace(array("\r\n", "\r", "\n", "\t", '  ', '    ', '    '), '', $buffer);
   return $buffer;
 }
-
 $carpeta_entrada="less/";
 $carpeta_salida="css/";
 $stylesheets=array("style");
 
 // poner un array de less y css
 $archivos_less =  array("./less/style.less");
-
 ob_start("compress");
 foreach ($archivos_less as $archivo) {
 	$archivo_arr = explode(".", $archivo);
@@ -40,6 +38,6 @@ foreach ($archivos_less as $archivo) {
 }
 header('Content-Type: text/css');
 // print out your php-driven css...
-ob_end_flush();
 
+ob_end_flush();
 ?>

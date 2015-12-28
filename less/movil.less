@@ -1,0 +1,196 @@
+@import 'variables.less';
+@import 'lib/sh.less';
+.header{
+	.logo{
+		img{
+			max-width: 250px;
+			height:auto;
+		}
+	}
+}
+#slider, #rotador_principal{
+	display: none;
+}
+.home{
+	.informacion{
+		.wide{
+			.clearfix();
+			ul{
+				.clearfix();
+				li{
+					float:left;
+					width:50%;
+				}
+			}
+		}
+	}
+
+	.servicios{
+		.item{
+			max-width: 80%;
+		}
+		#owl-demo .item img {
+		    display: block;
+		    height: auto;
+		    width: 70%;
+		    padding:5px;
+		}
+	}
+}
+
+
+
+///////////////////////////////////////////
+// Min width 500
+///////////////////////////////////////////
+
+@media (min-width: 500px) {
+	.home{
+		.noticias{
+			ul{
+				.clearfix();
+				li{
+					width:46%;
+					width:48%;
+					float:left;
+					margin:1%;
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////
+// Min width 600
+///////////////////////////////////////////
+
+@media (min-width: 600px) {
+	body{
+		padding-top:6em;
+	}
+	.header{
+		.logo{
+			img{
+
+			}
+		}
+	}
+	#slider, #rotador_principal{
+		display: block;
+		padding:0;
+		.flex-control-nav {
+		}
+	}
+	.home{
+		.informacion{
+			.wide{
+				ul{
+
+					li{
+						margin:2%;
+						max-width: 46%;
+						img{
+							max-width: 215px;
+						}
+					}
+				}
+			}
+		}
+		.servicios{
+			.item{
+				max-width: 80%;
+			}
+			#owl-demo .item img {
+			    display: block;
+			    height: auto;
+			    width: 80%;
+			    padding:5px;
+			}
+		}
+	}
+
+} // media query
+
+///////////////////////////////////////////
+// Min width 700
+///////////////////////////////////////////
+
+@media (min-width: 700px) {
+	body{
+		padding-top:6em;
+	}
+	.header{
+		.logo{
+			img{
+
+			}
+		}
+	}
+	#slider, #rotador_principal{
+		display: block;
+		padding:0;
+		padding-bottom:30px;
+		overflow: hidden;
+			.flex-control-nav{
+				bottom:-2px;
+			}
+	}
+	.home{
+		.noticias{
+			ul{
+				li{
+				}
+			}
+		}
+		.informacion{
+			.wide{
+				ul{
+					li{
+						margin:2%;
+						max-width: 21%;
+						img{
+							max-width: 100%;
+						}
+					}
+				}
+			}
+		}
+		#slider_evento{
+					.flex-caption{
+						display: none;
+					}
+					overflow: hidden;
+
+		}
+
+		.servicios{
+			.item{
+				max-width: 80%;
+			}
+			#owl-demo .item img {
+			    display: block;
+			    height: auto;
+			    width: 80%;
+			    padding:5px;
+			}
+		}
+		.banners{
+			ul{
+				li{
+
+				}
+				.infraestructura{
+					ul{
+						li{
+							img{
+								width:auto;
+							}
+						}
+					}
+				}
+				.video{
+				}
+			}
+		}
+	}
+} // media query
